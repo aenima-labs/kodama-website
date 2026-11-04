@@ -10,7 +10,7 @@ Public site for **Kodama**, an Ænima Labs venture. Static HTML/CSS/JS, no build
 - `404.html` — the not-found page GitHub Pages serves for unknown paths
 - `assets/tree.svg` — the traced moyogi bonsai from `kodama/assets/brand/tree/mark.svg`, ring removed, viewBox cropped. Used as a CSS mask so it can wear a gold gradient.
 - `assets/og.png` — 1200×630 link-preview image
-- Fonts (Cinzel, EB Garamond, Inter, Noto Serif JP) come from Google Fonts
+- `assets/fonts/` — self-hosted woff2 (Cinzel, EB Garamond, Inter, and Noto Serif JP subset to 木霊 and 一–六), all SIL Open Font License; the @font-face rules are at the top of `styles.css`
 - `CNAME` — custom domain
 - `.well-known/apple-app-site-association` — lists the iOS/macOS listener and donor apps under `webcredentials`, so they may use kodama.house passkeys (kodama.house is the passkey relying party). Keep the app IDs in step with the apps' entitlements. `.nojekyll` keeps GitHub Pages from skipping the dot-folder.
 
