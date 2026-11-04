@@ -12,6 +12,7 @@ Public site for **Kodama**, an Ænima Labs venture. Static HTML/CSS/JS, no build
 - `assets/og.png` — 1200×630 link-preview image
 - Fonts (Cinzel, EB Garamond, Inter, Noto Serif JP) come from Google Fonts
 - `CNAME` — custom domain
+- `.well-known/apple-app-site-association` — lists the iOS/macOS listener and donor apps under `webcredentials`, so they may use kodama.house passkeys (kodama.house is the passkey relying party). Keep the app IDs in step with the apps' entitlements. `.nojekyll` keeps GitHub Pages from skipping the dot-folder.
 
 ## Preview
 
@@ -21,4 +22,4 @@ python3 -m http.server 8721
 
 ## Deploying
 
-Pushes to `main` are deployed by GitHub Pages. The apex `kodama.house` needs GitHub Pages A/AAAA records (or an ALIAS) at the DNS provider; the `api`, `platform` and `donor` subdomains are unaffected.
+Pushes to `main` are deployed by GitHub Pages. DNS lives in Route 53 and is managed by Terraform in the kodama repo (`infra/terraform/apex.tf`): the apex has GitHub Pages A/AAAA records and `www` is a CNAME to `chernov-consulting.github.io`, which GitHub redirects to the apex. The `dev.*` app subdomains are unaffected.
