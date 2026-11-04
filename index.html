@@ -25,7 +25,24 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 	<!-- Only the kanji the page uses: 木霊 and the numerals 一–六 -->
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&text=%E6%9C%A8%E9%9C%8A%E4%B8%80%E4%BA%8C%E4%B8%89%E5%9B%9B%E4%BA%94%E5%85%AD&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="styles.css?v=20261104">
+	<link rel="stylesheet" href="styles.css?v=20261105">
+	<!-- Consent Mode: analytics stays off until the visitor says yes (see consent.js).
+     A returning visitor's yes is restored here, so the Google tag fires on Initialization. -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' });
+		try {
+			var c = JSON.parse(localStorage.getItem('consent') || 'null');
+			if (c && c.analytics === 'granted' && Date.now() - c.at < 365 * 864e5) {
+				gtag('consent', 'update', { analytics_storage: 'granted' });
+			}
+		} catch (e) {}
+	</script>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P8JJMC73');</script>
+	<!-- End Google Tag Manager -->
+
 	<script type="application/ld+json">
 	{"@context":"https://schema.org","@type":"Organization","name":"Kodama","url":"https://kodama.house/","logo":"https://kodama.house/assets/icon-192.png","email":"hello@aenima.io","slogan":"A trusted friend who carries your story.","parentOrganization":{"@type":"Organization","name":"Ænima Labs","url":"https://aenimalabs.com/"}}
 	</script>
@@ -357,11 +374,14 @@
 			<a href="https://aenimalabs.com">aenimalabs.com</a>
 			<a href="https://chernov.io">chernov.io</a>
 			<a href="mailto:hello@aenima.io">hello@aenima.io</a>
+			<a href="/privacy.html">Privacy</a>
+			<a href="#" data-cookie-settings>Cookie settings</a>
 		</nav>
 		<p class="footer-meta">&copy; <span id="year">2026</span> Ænima Labs · Copenhagen · Lisbon</p>
 	</div>
 </footer>
 
 <script src="main.js?v=20261104" defer></script>
+<script src="consent.js?v=20261105" defer></script>
 </body>
 </html>
