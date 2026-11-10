@@ -4,25 +4,25 @@
 	<meta charset="UTF-8">
 	<script>document.documentElement.classList.replace('no-js', 'js')</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kodama — A trusted friend who carries your story</title>
-	<meta name="description" content="Kodama is a consented, voice-first companion. A person tells their stories while alive; Kodama remembers them and speaks about them, with warmth and citations, to the people who come after. An Ænima Labs venture.">
+	<title>Kodama — An identity continuity service</title>
+	<meta name="description" content="Kodama is an identity continuity service. It lets donors, after they die or retire, pass their knowledge and decision-making to the heirs they designate — through a living AI guide built from their own memories, experiences and judgement. An Ænima Labs venture.">
 	<meta name="theme-color" content="#161A11">
 	<link rel="canonical" href="https://kodama.house/">
 	<meta property="og:site_name" content="Kodama">
-	<meta property="og:title" content="Kodama — A trusted friend who carries your story">
-	<meta property="og:description" content="A person tells their stories while they are alive. Kodama remembers them, and speaks about them — with warmth, and with sources — to the people who come after.">
+	<meta property="og:title" content="Kodama — An identity continuity service">
+	<meta property="og:description" content="Kodama is an identity continuity service. It lets donors, after they die or retire, pass their knowledge and decision-making to the heirs they designate — through a living AI guide built from their own memories, experiences and judgement.">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://kodama.house/">
-	<meta property="og:image" content="https://kodama.house/assets/og.png">
+	<meta property="og:image" content="https://kodama.house/assets/og.png?v=20261109">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
-	<meta property="og:image:alt" content="The gold Kodama bonsai inside a brush-stroke circle, with the words: A trusted friend who carries your story.">
+	<meta property="og:image:alt" content="The gold Kodama bonsai, with the words: Kodama. A trusted friend who carries your story. An identity continuity service.">
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
 	<link rel="apple-touch-icon" href="assets/icon-192.png">
 	<link rel="preload" href="assets/fonts/cinzel-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="assets/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="stylesheet" href="styles.css?v=20261106">
+	<link rel="stylesheet" href="styles.css?v=20261109">
 	<!-- Consent Mode: analytics stays off until the visitor says yes (see consent.js).
      A returning visitor's yes is restored here, so the Google tag fires on Initialization. -->
 	<script>
@@ -41,7 +41,7 @@
 	<!-- End Google Tag Manager -->
 
 	<script type="application/ld+json">
-	{"@context":"https://schema.org","@type":"Organization","name":"Kodama","url":"https://kodama.house/","logo":"https://kodama.house/assets/icon-192.png","email":"hello@aenima.io","slogan":"A trusted friend who carries your story.","parentOrganization":{"@type":"Organization","name":"Ænima Labs","url":"https://aenimalabs.com/"}}
+	{"@context":"https://schema.org","@type":"Organization","name":"Kodama","url":"https://kodama.house/","logo":"https://kodama.house/assets/icon-192.png","email":"hello@aenimalabs.com","description":"Kodama is an identity continuity service. It lets donors, after they die or retire, pass their knowledge and decision-making to the heirs they designate — through a living AI guide built from their own memories, experiences and judgement.","slogan":"A trusted friend who carries your story.","parentOrganization":{"@type":"Organization","name":"Ænima Labs","url":"https://aenimalabs.com/"}}
 	</script>
 </head>
 <body>
@@ -53,24 +53,22 @@
 		<span class="nav-word">Kodama</span>
 	</a>
 	<nav class="nav-links" aria-label="Sections">
-		<a href="#idea">The idea</a>
+		<a href="#why">Why</a>
+		<a href="#what">What it is</a>
 		<a href="#how">How it works</a>
-		<a href="#memorome">Memory</a>
-		<a href="#mind">How it thinks</a>
 		<a href="#promises">Promises</a>
-		<a class="nav-cta" href="#status">Register interest</a>
+		<a class="nav-cta" href="mailto:hello@aenimalabs.com?subject=Kodama%20%E2%80%94%20register%20interest" data-register>Register interest</a>
 	</nav>
 	<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-sheet"><span class="sr">Menu</span><i></i><i></i></button>
 </header>
 
 <div class="nav-sheet" id="nav-sheet" hidden>
 	<nav aria-label="Menu">
-		<a href="#idea"><span>一</span>The idea</a>
-		<a href="#how"><span>二</span>How it works</a>
-		<a href="#memorome"><span>三</span>Memory</a>
-		<a href="#mind"><span>四</span>How it thinks</a>
-		<a href="#promises"><span>五</span>Promises</a>
-		<a href="#status"><span>六</span>Register interest</a>
+		<a href="#why"><span>一</span>Why</a>
+		<a href="#what"><span>二</span>What it is</a>
+		<a href="#how"><span>三</span>How it works</a>
+		<a href="#promises"><span>四</span>Promises</a>
+		<a href="mailto:hello@aenimalabs.com?subject=Kodama%20%E2%80%94%20register%20interest" data-register><span>五</span>Register interest</a>
 	</nav>
 	<span class="tree-mask sheet-tree" aria-hidden="true"></span>
 </div>
@@ -81,15 +79,6 @@
 	<section class="hero" aria-labelledby="hero-title">
 		<div class="hero-sky" aria-hidden="true"></div>
 		<div class="hero-stage">
-			<svg class="enso" viewBox="0 0 400 400" aria-hidden="true">
-				<defs>
-					<filter id="brush" x="-10%" y="-10%" width="120%" height="120%">
-						<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4"/>
-						<feDisplacementMap in="SourceGraphic" scale="6"/>
-					</filter>
-				</defs>
-				<path class="enso-path" filter="url(#brush)" pathLength="1000" d="M 214 34 C 312 40 372 118 364 210 C 356 302 280 368 192 364 C 104 360 34 290 38 198 C 42 116 98 52 168 38"/>
-			</svg>
 			<div class="tree-mask hero-tree" role="img" aria-label="A gold bonsai in a shallow pot, the Kodama mark"></div>
 			<canvas class="stardust" aria-hidden="true"></canvas>
 		</div>
@@ -97,26 +86,67 @@
 			<p class="hero-kanji reveal" lang="ja">木霊</p>
 			<h1 id="hero-title" class="hero-title reveal">Kodama</h1>
 			<p class="hero-tagline reveal">A trusted friend who carries your story.</p>
-			<p class="hero-lede reveal">A person tells their stories while they are alive. Kodama remembers them, and speaks <em>about</em> them — with warmth, and with sources — to the people who come after.</p>
+			<p class="hero-lede reveal"><strong>Kodama is an identity continuity service.</strong> It allows donors, after they die or retire, to pass their knowledge and decision-making capabilities to future designated heirs — through a living AI guide built from their personal memories, experiences and judgement decisions.</p>
 			<div class="hero-actions reveal">
-				<a class="btn btn-gold" href="#status">Register interest</a>
-				<a class="btn btn-ghost" href="#how">How it works</a>
+				<a class="btn btn-gold" href="mailto:hello@aenimalabs.com?subject=Kodama%20%E2%80%94%20register%20interest" data-register>Register interest</a>
+				<a class="btn btn-ghost" href="#why">Why Kodama</a>
 			</div>
 		</div>
-		<a class="scroll-cue" href="#idea" aria-label="Scroll to the idea"><span></span></a>
+		<a class="scroll-cue" href="#why" aria-label="Scroll to why Kodama"><span></span></a>
 	</section>
 
-	<!-- ─── The idea ─── -->
-	<section id="idea" class="idea">
+	<!-- ─── Why ─── -->
+	<section id="why" class="why">
+		<div class="wrap">
+			<header class="section-head reveal">
+				<p class="label">Why Kodama</p>
+				<h2>When someone goes,<br><span class="gold">their judgement goes with them.</span></h2>
+				<p class="section-lede">We inherit houses, companies and photo albums. We rarely inherit what made them work: how a person thought, what they weighed, and why they chose as they did.</p>
+			</header>
+			<div class="why-grid">
+				<article class="why-card reveal">
+					<span class="why-n" aria-hidden="true">一</span>
+					<h3>It leaves all at once</h3>
+					<p>A founder retires, a parent dies, a mentor steps back. Decades of context — who to trust, what was tried, what really mattered — leave in a single day.</p>
+				</article>
+				<article class="why-card reveal">
+					<span class="why-n" aria-hidden="true">二</span>
+					<h3>Archives can't answer back</h3>
+					<p>Letters, videos and documents keep what was said. They can't answer the question you have today, about a situation they never saw.</p>
+				</article>
+				<article class="why-card reveal">
+					<span class="why-n" aria-hidden="true">三</span>
+					<h3>Heirs are left guessing</h3>
+					<p>Without that context, the people who carry on are left to guess what they would have done — and often to disagree about it.</p>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<!-- ─── What ─── -->
+	<section id="what" class="idea">
 		<div class="wrap idea-grid">
 			<div class="idea-statement reveal">
-				<p class="label">The idea</p>
-				<h2>Not an impersonation.<br><span class="gold">A friend who remembers.</span></h2>
+				<p class="label">What Kodama is</p>
+				<h2>A living guide,<br><span class="gold">built from a life.</span></h2>
 			</div>
 			<div class="idea-body reveal">
-				<p class="lead">Kodama never pretends to be the person. It is their trusted friend: a conversational counterpart that knows their stories, their values, and the way they see the world.</p>
-				<p>The donor authors their own continuity, in their own voice, on their own terms. The people they choose receive the right to listen — and the right to refuse.</p>
+				<p class="lead">While they are alive, the donor tells Kodama their story: the memories, the experiences, and the decisions they made — and why. Kodama turns it into a guide the people they choose can talk to.</p>
+				<p>It is not an impersonation. Kodama never pretends to be the person; it speaks <em>about</em> them, like a trusted friend who knew them well, and only from what they actually said.</p>
 			</div>
+			<div class="asks reveal">
+				<p class="asks-label">What heirs ask</p>
+				<ul>
+					<li>“What would she have weighed here?”</li>
+					<li>“Why did he never sell the farm?”</li>
+					<li>“How did they decide who to trust?”</li>
+				</ul>
+			</div>
+			<dl class="for reveal">
+				<div><dt>Families</dt><dd>Values, stories and history, kept for children and grandchildren.</dd></div>
+				<div><dt>Family businesses</dt><dd>The reasoning behind decisions, handed to the next generation.</dd></div>
+				<div><dt>Founders &amp; mentors</dt><dd>Hard-won judgement that would otherwise retire with them.</dd></div>
+			</dl>
 			<figure class="etymology reveal">
 				<span class="etymology-kanji" lang="ja" aria-hidden="true">木霊</span>
 				<figcaption>
@@ -146,18 +176,18 @@
 							<h3>Kodama listens</h3>
 						</div>
 					</div>
-					<p>A guided interview, at the donor's own pace. Kodama asks the questions a good friend would — about places, people, turning points — and follows a structured map so nothing important is left to chance.</p>
+					<p>Guided voice interviews, at the donor's own pace. Kodama asks what a good friend would — about people, turning points, and the hard calls — so nothing important is left to chance.</p>
 					<ul class="ticks">
-						<li>Guided voice interviews that follow the map of a life</li>
+						<li>Memories, experiences and the reasoning behind decisions</li>
 						<li>A self-portrait of values and temperament</li>
-						<li>The donor reviews everything Kodama has written down</li>
+						<li>The donor reviews everything Kodama keeps</li>
 					</ul>
 				</article>
 
 				<div class="voices-bridge" aria-hidden="true">
 					<span class="tree-mask bridge-tree"></span>
 					<span class="bridge-line"></span>
-					<span class="bridge-label">memorome</span>
+					<span class="bridge-label">their story</span>
 				</div>
 
 				<article class="voice-card reveal">
@@ -166,58 +196,25 @@
 							<svg viewBox="0 0 32 32" fill="none"><path d="M6 18v-2a10 10 0 0 1 20 0v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><rect x="4" y="18" width="6" height="9" rx="2" stroke="currentColor" stroke-width="1.6"/><rect x="22" y="18" width="6" height="9" rx="2" stroke="currentColor" stroke-width="1.6"/></svg>
 						</span>
 						<div>
-							<p class="voice-role">The listener</p>
+							<p class="voice-role">The heirs</p>
 							<h3>Kodama remembers</h3>
 						</div>
 					</div>
-					<p>A child, a grandchild, an old friend — someone the donor named — sits down and asks. Kodama answers from what the donor actually said, and tells them where it came from.</p>
+					<p>A child, a successor, an old friend — someone the donor named — sits down and asks. Kodama answers from what the donor actually said, and tells them where it came from.</p>
 					<ul class="ticks">
-						<li>Only the listeners the donor names, each with their own key</li>
-						<li>Every biographical claim is cited — or Kodama abstains</li>
-						<li>Each listener's conversations stay private to them</li>
+						<li>Only the heirs the donor names, each with their own key</li>
+						<li>Every claim about the donor is cited — or Kodama abstains</li>
+						<li>Each heir's conversations stay private to them</li>
 					</ul>
 				</article>
 			</div>
 
 			<ol class="journey">
-				<li class="reveal"><span class="journey-n">I</span><h3>Capture</h3><p>The donor speaks. Transcripts are kept raw and unaltered.</p></li>
-				<li class="reveal"><span class="journey-n">II</span><h3>Compile</h3><p>A memorizer distils them into people, events, themes and voice.</p></li>
-				<li class="reveal"><span class="journey-n">III</span><h3>Converse</h3><p>Listeners talk with Kodama. It cites, or it stays quiet.</p></li>
-				<li class="reveal"><span class="journey-n">IV</span><h3>Rest</h3><p>Retirement is designed in from the start — not an afterthought.</p></li>
+				<li class="reveal"><span class="journey-n">I</span><h3>Capture</h3><p>The donor speaks, while alive. Their words are kept as they said them.</p></li>
+				<li class="reveal"><span class="journey-n">II</span><h3>Compile</h3><p>Kodama distils people, events, values and decisions — and what is unknown.</p></li>
+				<li class="reveal"><span class="journey-n">III</span><h3>Converse</h3><p>After they die or retire, their heirs talk with Kodama. It cites, or it stays quiet.</p></li>
+				<li class="reveal"><span class="journey-n">IV</span><h3>Rest</h3><p>How a guide eventually comes to rest is designed in from the start.</p></li>
 			</ol>
-		</div>
-	</section>
-
-	<!-- ─── Memorome ─── -->
-	<section id="memorome" class="memorome">
-		<div class="wrap memorome-grid">
-			<div class="memorome-copy reveal">
-				<p class="label">Memory</p>
-				<h2>A memorome,<br>not a search index.</h2>
-				<p class="lead">Human memory is not search. Most of it is dark matter — there, but only reached by the right cue: the smell of tar, a waltz on the kitchen radio.</p>
-				<p>Kodama keeps a person's memory as a living set of pages — people, events, themes, the way they speak — linked by the associations <em>they</em> made, not the ones a model would guess. Beliefs that changed keep their history. What the donor never knew is written down too, so the gap is never filled with invention.</p>
-				<dl class="strata">
-					<div><dt>Raw</dt><dd>Every conversation, verbatim and immutable.</dd></div>
-					<div><dt>Compiled</dt><dd>Entities, events, themes, voice, implications.</dd></div>
-					<div><dt>Voids</dt><dd>What is missing — and what was never known.</dd></div>
-				</dl>
-			</div>
-
-			<div class="memory-card reveal" aria-label="Example of a remembered moment">
-				<div class="memory-card-head">
-					<span class="memory-kicker">A remembered moment</span>
-				</div>
-				<div class="memory-body">
-					<h3 class="memory-title">The summer dance</h3>
-					<blockquote class="memory-quote">“Whenever that waltz came on the kitchen radio, I was back at the lake.”</blockquote>
-					<p class="memory-label">Brings it back</p>
-					<ul class="memory-cues">
-						<li>the kitchen radio</li><li>a waltz</li><li>the smell of the lake</li>
-					</ul>
-					<p class="memory-link">Linked to <strong>the lake cottage</strong> · in her own words</p>
-				</div>
-				<p class="memory-note">A personal association: no shared words, no obvious connection — just the donor saying <em>“this brings that back.”</em> Illustrative memory from a synthetic presence.</p>
-			</div>
 		</div>
 	</section>
 
@@ -235,82 +232,13 @@
 					<p>I don't know. She never told me — and I won't guess on her behalf.</p>
 					<span class="cite cite-void">Not in her story · no guess</span>
 				</div>
-				<p class="chat-note">Illustrative exchange with a synthetic presence.</p>
+				<p class="chat-note">Illustrative exchange with a synthetic donor.</p>
 			</div>
 			<div class="grounded-copy reveal">
 				<p class="label">Grounded</p>
 				<h2>Cite, or stay silent.</h2>
 				<p class="lead">A language model knows a great deal about the world. It knows nothing about your grandmother.</p>
-				<p>So Kodama separates the two. Every claim about the donor's life must point at a page the donor's own words produced. When there is no page, Kodama says so. Warmth is welcome; invention is not.</p>
-			</div>
-		</div>
-	</section>
-
-	<!-- ─── How it thinks ─── -->
-	<section id="mind" class="mind">
-		<div class="wrap">
-			<header class="section-head reveal">
-				<p class="label">How it thinks</p>
-				<h2>Fast to answer. Slow to remember.</h2>
-				<p class="section-lede">Voice is unforgiving: a pause feels like absence. Kodama's mind is split so that speaking never waits for thinking.</p>
-			</header>
-
-			<div class="mind-diagram reveal">
-				<svg viewBox="0 0 960 360" role="img" aria-labelledby="mind-title mind-desc">
-					<title id="mind-title">Kodama cognition</title>
-					<desc id="mind-desc">The fast path hears, assembles working memory, thinks and speaks. Backthoughts read the memorome in parallel and leave notes on a blackboard that working memory reads. The memorizer is the only writer of the long-term memorome.</desc>
-					<defs>
-						<marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker>
-					</defs>
-					<g class="lane"><rect x="20" y="30" width="920" height="84" rx="14"/><text x="44" y="62" class="lane-title">Fast path</text><text x="44" y="86" class="lane-sub">every turn · never waits</text></g>
-					<g class="lane"><rect x="20" y="138" width="920" height="84" rx="14"/><text x="44" y="170" class="lane-title">Backthoughts</text><text x="44" y="194" class="lane-sub">in parallel · never awaited</text></g>
-					<g class="lane"><rect x="20" y="246" width="920" height="84" rx="14"/><text x="44" y="278" class="lane-title">Memorizer</text><text x="44" y="302" class="lane-sub">after the session · sole writer</text></g>
-
-					<path class="track" d="M250 72H910M250 180H910M250 288H910"/>
-					<path class="flow" d="M845 158V128H500V98" marker-end="url(#arr)"/>
-					<path class="flow flow-dash" d="M750 266V238H325V206" marker-end="url(#arr)"/>
-					<circle class="pulse" r="4"><animateMotion dur="2.4s" repeatCount="indefinite" path="M250 72H910"/></circle>
-					<circle class="pulse pulse-slow" r="4"><animateMotion dur="4.8s" repeatCount="indefinite" path="M250 180H910"/></circle>
-					<circle class="pulse pulse-slower" r="4"><animateMotion dur="8s" repeatCount="indefinite" path="M250 288H910"/></circle>
-
-					<g class="chip"><rect x="250" y="50" width="130" height="44" rx="22"/><text x="315" y="77">hear</text></g>
-					<g class="chip"><rect x="420" y="50" width="160" height="44" rx="22"/><text x="500" y="77">working memory</text></g>
-					<g class="chip"><rect x="620" y="50" width="120" height="44" rx="22"/><text x="680" y="77">think</text></g>
-					<g class="chip chip-gold"><rect x="780" y="50" width="130" height="44" rx="22"/><text x="845" y="77">speak</text></g>
-					<g class="chip"><rect x="250" y="158" width="150" height="44" rx="22"/><text x="325" y="185">recall</text></g>
-					<g class="chip"><rect x="420" y="158" width="150" height="44" rx="22"/><text x="495" y="185">topics</text></g>
-					<g class="chip"><rect x="590" y="158" width="150" height="44" rx="22"/><text x="665" y="185">guardrail</text></g>
-					<g class="chip chip-soft"><rect x="780" y="158" width="130" height="44" rx="22"/><text x="845" y="185">blackboard</text></g>
-					<g class="chip"><rect x="250" y="266" width="150" height="44" rx="22"/><text x="325" y="293">ingest</text></g>
-					<g class="chip"><rect x="420" y="266" width="150" height="44" rx="22"/><text x="495" y="293">ruminate</text></g>
-					<g class="chip chip-gold"><rect x="590" y="266" width="320" height="44" rx="22"/><text x="750" y="293">memorome</text></g>
-				</svg>
-			</div>
-
-			<ol class="mind-stack reveal" aria-label="Kodama cognition, step by step">
-				<li class="ms-lane">
-					<p class="ms-title">Fast path</p>
-					<p class="ms-sub">every turn · never waits</p>
-					<ol class="ms-chips"><li><span>hear</span></li><li><span>working memory</span></li><li><span>think</span></li><li class="ms-gold"><span>speak</span></li></ol>
-				</li>
-				<li class="ms-link"><span>notes on a blackboard, read when ready</span></li>
-				<li class="ms-lane">
-					<p class="ms-title">Backthoughts</p>
-					<p class="ms-sub">in parallel · never awaited</p>
-					<ol class="ms-chips"><li><span>recall</span></li><li><span>topics</span></li><li><span>guardrail</span></li><li class="ms-soft"><span>blackboard</span></li></ol>
-				</li>
-				<li class="ms-link ms-link-dash"><span>recall reads the memorome</span></li>
-				<li class="ms-lane">
-					<p class="ms-title">Memorizer</p>
-					<p class="ms-sub">after the session · sole writer</p>
-					<ol class="ms-chips"><li><span>ingest</span></li><li><span>ruminate</span></li><li class="ms-gold"><span>memorome</span></li></ol>
-				</li>
-			</ol>
-
-			<div class="mind-points">
-				<article class="reveal"><h3>The fast path only reads.</h3><p>Every reply is built from what Kodama already knows, gathered fresh for that moment. It never waits on slower thinking, and never rewrites a memory mid-conversation.</p></article>
-				<article class="reveal"><h3>Backthoughts think alongside.</h3><p>While you talk, Kodama quietly recalls what this moment brings to mind and leaves itself notes. If a note arrives late, it simply speaks without it.</p></article>
-				<article class="reveal"><h3>One careful writer.</h3><p>Only one part of Kodama may change what it remembers — after the conversation, and always with sources. Memory grows deliberately, never as a side-effect of chat.</p></article>
+				<p>So Kodama keeps the two apart. Every claim about the donor's life points back to their own words. When there is nothing to point to, Kodama says so. Warmth is welcome; invention is not.</p>
 			</div>
 		</div>
 	</section>
@@ -326,9 +254,9 @@
 				<article class="promise reveal"><span class="promise-n">一</span><h3>Lifetime consent</h3><p>Only a living adult can donate, and only for themselves. Consent is explicit, revisited, and theirs to withdraw.</p></article>
 				<article class="promise reveal"><span class="promise-n">二</span><h3>No advertising, ever</h3><p>A person's memory is not inventory, and a family's attention is not the product.</p></article>
 				<article class="promise reveal"><span class="promise-n">三</span><h3>Never an impersonation</h3><p>Kodama speaks about the donor, never as them. It is their friend — not their replacement.</p></article>
-				<article class="promise reveal"><span class="promise-n">四</span><h3>No therapeutic claims</h3><p>Kodama is a companion, not a treatment. A named clinical advisory board keeps us honest about that line.</p></article>
-				<article class="promise reveal"><span class="promise-n">五</span><h3>The right to refuse</h3><p>Listeners are invited, never enrolled. Anyone may decline to listen, and each conversation stays theirs alone.</p></article>
-				<article class="promise reveal"><span class="promise-n">六</span><h3>Designed retirement</h3><p>How a presence eventually comes to rest is designed in from the start — not left to chance.</p></article>
+				<article class="promise reveal"><span class="promise-n">四</span><h3>No therapeutic claims</h3><p>Kodama is a guide, not a treatment. A named clinical advisory board keeps us honest about that line.</p></article>
+				<article class="promise reveal"><span class="promise-n">五</span><h3>The right to refuse</h3><p>Heirs are invited, never enrolled. Anyone may decline to listen, and each conversation stays theirs alone.</p></article>
+				<article class="promise reveal"><span class="promise-n">六</span><h3>Designed retirement</h3><p>How a guide eventually comes to rest is designed in from the start — not left to chance.</p></article>
 			</div>
 		</div>
 	</section>
@@ -340,23 +268,62 @@
 			<div class="status-copy reveal">
 				<p class="label">Where we are</p>
 				<h2>Growing slowly, on purpose.</h2>
-				<p class="lead">Kodama is a working prototype — real voice conversations, a real memorome, real evaluations — in a 90-day validation gate at Ænima Labs.</p>
+				<p class="lead">Kodama is a working prototype — real voice conversations, real memory, real evaluations — built at Ænima Labs.</p>
 				<ul class="status-list">
-					<li><span class="status-dot status-live"></span>Working prototype on iOS, macOS and web</li>
-					<li><span class="status-dot"></span>90-day validation gate in progress</li>
+					<li><span class="status-dot status-live"></span>Working prototype ready</li>
 				</ul>
 			</div>
 			<div class="status-card reveal">
 				<span class="tree-mask status-tree" aria-hidden="true"></span>
 				<h3>Be among the first to hear.</h3>
-				<p>Families, clinicians, researchers and partners — we read every message.</p>
-				<a class="btn btn-gold" href="mailto:hello@aenima.io?subject=Kodama%20%E2%80%94%20register%20interest">hello@aenima.io</a>
+				<p>Families, family businesses, clinicians, researchers and partners — we read every message.</p>
+				<a class="btn btn-gold" href="mailto:hello@aenimalabs.com?subject=Kodama%20%E2%80%94%20register%20interest" data-register>Register interest</a>
 				<p class="status-slush">Meeting us at <strong>Slush 2026</strong> in Helsinki? Ask for a live demo.</p>
 			</div>
 		</div>
 	</section>
 
 </main>
+
+<!-- Register interest: a short form that hands off to the visitor's email app.
+     Nothing is stored or sent by this site. -->
+<dialog class="ri" id="register" aria-labelledby="ri-title">
+	<button class="ri-close" type="button" data-close aria-label="Close"><i></i><i></i></button>
+	<form class="ri-form" novalidate>
+		<span class="tree-mask ri-tree" aria-hidden="true"></span>
+		<h2 id="ri-title">Register interest</h2>
+		<p class="ri-sub">Tell us a little, and we'll be in touch as Kodama opens up.</p>
+		<label class="ri-field">
+			<span>Your name</span>
+			<input name="name" type="text" autocomplete="name" required maxlength="120">
+			<em class="ri-error" hidden>Please add your name.</em>
+		</label>
+		<fieldset class="ri-as">
+			<legend>I'm interested as</legend>
+			<label><input type="radio" name="as" value="A future donor" checked><span>A future donor</span></label>
+			<label><input type="radio" name="as" value="An heir or family member"><span>An heir or family</span></label>
+			<label><input type="radio" name="as" value="A family business"><span>A family business</span></label>
+			<label><input type="radio" name="as" value="A clinician or researcher"><span>Clinician or researcher</span></label>
+			<label><input type="radio" name="as" value="A partner or investor"><span>Partner or investor</span></label>
+		</fieldset>
+		<label class="ri-field">
+			<span>Anything you'd like us to know <small>optional</small></span>
+			<textarea name="note" rows="3" maxlength="1500"></textarea>
+		</label>
+		<button class="btn btn-gold ri-submit" type="submit">Continue in your email app</button>
+		<p class="ri-fine">This opens your email app with the message ready to send to <a href="mailto:hello@aenimalabs.com">hello@aenimalabs.com</a>. Nothing is stored on this site.</p>
+	</form>
+	<div class="ri-done" hidden>
+		<span class="tree-mask ri-tree" aria-hidden="true"></span>
+		<h2 tabindex="-1">Almost there.</h2>
+		<p>Your email app should now be open with the message ready. Press send, and it reaches us.</p>
+		<p class="ri-fine">Nothing opened? Copy the message and send it to <a href="mailto:hello@aenimalabs.com">hello@aenimalabs.com</a>.</p>
+		<div class="ri-actions">
+			<button class="btn btn-ghost" type="button" data-copy>Copy message</button>
+			<button class="btn btn-gold" type="button" data-close>Done</button>
+		</div>
+	</div>
+</dialog>
 
 <footer class="footer">
 	<div class="wrap footer-grid">
@@ -370,7 +337,7 @@
 		<nav class="footer-links" aria-label="Related">
 			<a href="https://aenimalabs.com">aenimalabs.com</a>
 			<a href="https://chernov.io">chernov.io</a>
-			<a href="mailto:hello@aenima.io">hello@aenima.io</a>
+			<a href="mailto:hello@aenimalabs.com">hello@aenimalabs.com</a>
 			<a href="/privacy.html">Privacy</a>
 			<a href="#" data-cookie-settings>Cookie settings</a>
 		</nav>
@@ -378,7 +345,7 @@
 	</div>
 </footer>
 
-<script src="main.js?v=20261104" defer></script>
+<script src="main.js?v=20261109" defer></script>
 <script src="consent.js?v=20261105" defer></script>
 </body>
 </html>

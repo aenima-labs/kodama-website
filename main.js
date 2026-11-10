@@ -71,6 +71,84 @@
 		Object.keys(byId).forEach(function (id) { var s = document.getElementById(id); if (s) spy.observe(s); });
 	}
 
+	// Register interest: a short form in a dialog that hands the message to the
+	// visitor's email app. Without JS (or <dialog>) the links stay plain mailto.
+	var dialog = document.getElementById('register');
+	if (dialog && typeof dialog.showModal === 'function') {
+		var TO = 'hello@aenimalabs.com';
+		var form = dialog.querySelector('.ri-form');
+		var done = dialog.querySelector('.ri-done');
+		var nameInput = form.elements.name;
+		var nameError = dialog.querySelector('.ri-error');
+		var opener = null, message = null;
+
+		var openDialog = function (from) {
+			opener = from || null;
+			if (root.classList.contains('menu-open')) setMenu(false);
+			form.hidden = false; done.hidden = true;
+			dialog.showModal();
+			setTimeout(function () { nameInput.focus(); }, 30);
+		};
+		var closeDialog = function () { dialog.close(); };
+
+		document.addEventListener('click', function (e) {
+			var a = e.target.closest('[data-register]');
+			if (!a) return;
+			e.preventDefault();
+			openDialog(a);
+		});
+		dialog.addEventListener('click', function (e) {
+			if (e.target === dialog || e.target.closest('[data-close]')) closeDialog();
+		});
+		dialog.addEventListener('close', function () {
+			if (location.hash === '#register') history.replaceState(null, '', location.pathname + location.search);
+			if (opener) opener.focus({ preventScroll: true });
+		});
+
+		nameInput.addEventListener('input', function () {
+			nameInput.removeAttribute('aria-invalid'); nameError.hidden = true;
+		});
+
+		form.addEventListener('submit', function (e) {
+			e.preventDefault();
+			var name = nameInput.value.trim();
+			if (!name) {
+				nameInput.setAttribute('aria-invalid', 'true'); nameError.hidden = false; nameInput.focus();
+				return;
+			}
+			var as = (form.querySelector('input[name="as"]:checked') || {}).value || '';
+			var note = form.elements.note.value.trim();
+			var subject = 'Kodama — register interest (' + name + ')';
+			var body = 'Hello Kodama team,\n\nI would like to register my interest in Kodama.\n\n' +
+				'Name: ' + name + '\nInterested as: ' + as + '\n' +
+				(note ? '\n' + note + '\n' : '') +
+				'\nSent from kodama.house';
+			message = 'To: ' + TO + '\nSubject: ' + subject + '\n\n' + body;
+			try { window.dataLayer && window.dataLayer.push({ event: 'register_interest', interest_as: as }); } catch (err) {}
+			var mail = document.createElement('a');
+			mail.href = 'mailto:' + TO + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body.replace(/\n/g, '\r\n'));
+			document.body.appendChild(mail);
+			mail.click();
+			mail.remove();
+			form.hidden = true; done.hidden = false;
+			done.querySelector('h2').focus();
+		});
+
+		var copyBtn = dialog.querySelector('[data-copy]');
+		copyBtn.addEventListener('click', function () {
+			var label = copyBtn.textContent;
+			var ok = function () { copyBtn.textContent = 'Copied'; setTimeout(function () { copyBtn.textContent = label; }, 2000); };
+			if (navigator.clipboard && message) {
+				navigator.clipboard.writeText(message).then(ok, function () { window.prompt('Copy the message:', message); });
+			} else if (message) {
+				window.prompt('Copy the message:', message);
+			}
+		});
+
+		// kodama.house/#register opens the form directly (linked from aenimalabs.com).
+		if (location.hash === '#register') openDialog(null);
+	}
+
 	// Stardust: sparks in an invisible sphere around the canopy.
 	// Wind blows gently upward; the pointer is a soft breeze.
 	var canvas = document.querySelector('.stardust');

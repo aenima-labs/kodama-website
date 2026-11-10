@@ -6,7 +6,8 @@ Public site for **Kodama**, an Ænima Labs venture. Static HTML/CSS/JS, no build
 
 - `index.html` — the landing page
 - `styles.css` — hand-written CSS (Kodama Design System v2 palette: forest-deep, parchment, gold leaf)
-- `main.js` — mobile menu, current-section highlight, reveal-on-scroll, and the stardust canvas around the tree
+- `main.js` — mobile menu, current-section highlight, reveal-on-scroll, the register-interest dialog, and the stardust canvas around the tree
+- Register interest: every `[data-register]` link opens a short form (`<dialog id="register">`) that hands the message to the visitor's email app, addressed to hello@aenimalabs.com. Nothing is stored or sent by the site; `kodama.house/#register` opens it directly. Without JS the links are plain `mailto:`.
 - `404.html` — the not-found page GitHub Pages serves for unknown paths
 - `assets/tree.svg` — the traced moyogi bonsai from `kodama/assets/brand/tree/mark.svg`, ring removed, viewBox cropped. Used as a CSS mask so it can wear a gold gradient.
 - `assets/og.png` — 1200×630 link-preview image
